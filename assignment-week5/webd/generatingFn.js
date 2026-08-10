@@ -1,3 +1,4 @@
+
 function* calculator(initial) {
     let result = initial;
 
@@ -39,3 +40,28 @@ function* calculator(initial) {
         }
     }
 }
+
+
+
+const calc = calculator(50);
+
+console.log(calc.next());
+console.log(calc.next({
+    operation: "add",
+    value: 30
+}));
+
+console.log(calc.next({
+    operation: "multiply",
+    value: 2
+}));
+
+console.log(calc.next({
+    operation: "add",
+    value: "30"
+}));
+
+console.log(calc.next({
+    operation: "multiply",
+    value: 0
+}));
