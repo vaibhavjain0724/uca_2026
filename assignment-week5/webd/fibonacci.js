@@ -21,6 +21,5 @@ console.log(fib.next());
 console.log(fib.next());
 console.log(fib.next());
 console.log(fib.next());
-
 console.log(fib.next());
 console.log(fib.next());
